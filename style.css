@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+position: relative;
+/* nomi */
+animation-name: lorem;
+/* davomiligi */
+animation-duration: 1s;
+/* kutish vaqti */
+animation-delay: 0s;
+/* animatsiya soni= infinint cheksiz */
+animation-iteration-count: 1;
+/* yonalish */
+animation-direction: alternate;
+/* holati */
+animation-timing-function: linear;
+/* to - holatida qoladi */
+animation-fill-mode: forwards;
+}
+@keyframes lorem {
+        0%{
+            left: 0;
+            top: 0;
+        }
+        25%{
+            left: 500px;
+            top: 0px;
+        }
+        50%{
+            left: 500px;
+            top: 500px;
+        }
+        75%{
+            left: 0px;
+            top: 500px;
+        }
+        100%{
+top: 0;
+left: 0;
+        }
+}
+/* @keyframes lorem {
+    from{
+     left: 0;
+    }
+    to{
+        left: 500px;
+        border-radius: 50% 0 50% 0;
+        background-color: blue;
+    }
+} */
